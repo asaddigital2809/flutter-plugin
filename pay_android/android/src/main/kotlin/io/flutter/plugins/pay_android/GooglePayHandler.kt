@@ -21,7 +21,6 @@ import android.content.Intent
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.common.api.CommonStatusCodes
 import com.google.android.gms.wallet.*
-import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry
 import io.flutter.plugins.pay_android.util.PaymentsUtil
 import org.json.JSONObject
@@ -166,7 +165,7 @@ class GooglePayHandler(private val activity: Activity) :
                 LOAD_PAYMENT_DATA_REQUEST_CODE)
     }
 
-    override fun onActivityResult(
+    fun onActivityResult(
             requestCode: Int,
             resultCode: Int,
             data: Intent?,

@@ -17,6 +17,7 @@
 package io.flutter.plugins.pay_android
 
 import androidx.annotation.NonNull
+import com.google.firebase.iid.Registrar
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.embedding.engine.plugins.activity.ActivityAware
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
